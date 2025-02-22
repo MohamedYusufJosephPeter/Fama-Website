@@ -150,7 +150,7 @@ export default function GalleryPage() {
   </div>
 
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    {['video1.mp4', 'video2.mp4', 'video3.mp4'].map((video, i) => (
+    {['video3.mp4'].map((video, i) => (
       <div key={i} className="relative aspect-video rounded-lg overflow-hidden bg-gray-100">
         <video controls className="object-cover w-full h-full">
           <source src={`/Videos/${video}`} type="video/mp4" />
