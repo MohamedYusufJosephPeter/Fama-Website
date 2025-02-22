@@ -23,7 +23,7 @@ const categories = [
   {
     title: "Online Mehandi Classes",
     slug: "online-classes",
-    image: "/Gallery/Online Mehandi Classes.PNG?hei ght=400&width=600",
+    image: "/Gallery/Online Mehandi Classes.PNG?height=400&width=600",
     count: "10+ Courses",
   },
   {
@@ -50,7 +50,7 @@ export default function GalleryPage() {
   return (
     <div className="space-y-12">
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">Our Gallery</h1>
+        <h1 className="text-4xl font-bold text-pink-800 mb-4">Our Gallery</h1>
         <p className="text-gray-600 max-w-2xl mx-auto">
           Explore our extensive collection of bridal mehandi designs, makeup transformations, and professional services.
         </p>
@@ -134,4 +134,3 @@ export default function GalleryPage() {
     </div>
   )
 }
-

@@ -103,13 +103,13 @@ export default function Contact() {
             <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
               Email
             </label>
-            <Input type="email" id="email" name="email" required />
+            <Input type="email" id="email" name="email"  />
           </div>
           <div>
             <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
               Phone
             </label>
-            <Input type="tel" id="phone" name="phone" />
+            <Input type="tel" id="phone" name="phone" required />
           </div>
           <div>
             <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
