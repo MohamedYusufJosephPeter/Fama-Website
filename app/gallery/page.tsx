@@ -5,7 +5,7 @@ const categories = [
   {
     title: "Bridal Mehandi",
     slug: "bridal-mehandi",
-    image: "/Gallery/Bridal Mehandi.jpg?height=400&width=600",
+    image: "/Gallery/Bridal Mehandi.JPG?height=400&width=600",
     count: "50+ Designs",
   },
   {
@@ -23,7 +23,7 @@ const categories = [
   {
     title: "Online Mehandi Classes",
     slug: "online-classes",
-    image: "/Gallery/Online Mehandi Classes.PNG?height=400&width=600",
+    image: "/Gallery/Online Mehandi Classes.png?height=400&width=600",
     count: "10+ Courses",
   },
   {
