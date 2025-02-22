@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Instagram, Linkedin, Mail, Phone, Youtube } from "lucide-react"
+import { Instagram, Linkedin, Mail, Phone, Youtube , Facebook} from "lucide-react"
 import { useFormStatus } from "react-dom"
 import { useRef } from "react"
 import { toast } from "sonner"
@@ -80,14 +80,14 @@ export default function Contact() {
               <span>Fama Mehandi Artist</span>
             </a>
             <a
-              href="https://www.linkedin.com/in/fama-mehandi-artist-b07445326/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 text-gray-600 hover:text-pink-600"
-            >
-              <Linkedin className="w-5 h-5" />
-              <span>Fama Mehandi Artist</span>
-            </a>
+                    href="https://www.facebook.com/kathija6?mibextid=ZbWKwL"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-gray-600 hover:text-pink-600 transition-colors"
+                  >
+                    <Facebook className="w-5 h-5" />
+                    <span>Fama Mehandi Artist</span>
+                  </a>
             
           </div>
         </div>

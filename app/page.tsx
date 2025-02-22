@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="space-y-8">
       <section className="text-center">
-        <h1 className="text-4xl font-bold text-pink-800 mb-4">Welcome to Fama Makeover & Mehandi Studio
+        <h1 className="text-3xl font-bold text-pink-800 mb-4">Welcome to Fama Makeover & Mehandi Studio
         </h1>
         <p className="text-xl text-gray-600">Certified beautician specializing in bridal mehandi, makeup, and more</p>
       </section>

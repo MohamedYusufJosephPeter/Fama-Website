@@ -25,8 +25,8 @@ export default function RootLayout({
       <header className="fixed top-0 left-0 right-0 bg-pink-100 p-4 z-50">
           <nav className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center">
-              <img src="/Logo/Logo.jpg" alt="Logo" className="w-10 h-10 mr-2 rounded-full" />
-              <Link href="/" className="text-3xl font-extrabold text-pink-800" style={{ fontFamily: 'cursive' }}>
+              <img src="/Logo/Logo.jpg" alt="Logo" className="w-11 h-11 mr-2 rounded-full" />
+              <Link href="/" className="text-4xl font-extrabold text-pink-800" style={{ fontFamily: 'cursive' }}>
                 Fama Beautician
               </Link>
             </div>

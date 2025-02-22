@@ -64,7 +64,7 @@ export default function CategoryPage({ params }: { params: { category: string } 
   return (
     <div className="space-y-8">
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">{category.title}</h1>
+        <h1 className="text-4xl font-bold text-pink-800 mb-4">{category.title}</h1>
         <p className="text-gray-600 max-w-2xl mx-auto">{category.description}</p>
       </div>
 
@@ -86,4 +86,3 @@ export default function CategoryPage({ params }: { params: { category: string } 
     </div>
   )
 }
-
