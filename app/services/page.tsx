@@ -4,7 +4,7 @@ const services = [
   {
     name: "Bridal Mehandi",
     description: "Intricate and beautiful mehandi designs for your special day",
-    image: "/Services/Bridal Mehandi.jpg?height=200&width=300",
+    image: "/Services/Bridal Mehandi.JPG?height=200&width=300",
   },
   {
     name: "Bridal Makeup",
@@ -24,7 +24,7 @@ const services = [
   {
     name: "Online Mehandi Classes",
     description: "Learn the art of mehandi from the comfort of your home",
-    image: "/Services/Online Mehandi Classes.PNG?height=200&width=300",
+    image: "/Services/Online Mehandi Classes.png?height=200&width=300",
   },
 ]
 
@@ -36,7 +36,7 @@ export default function Services() {
         {services.map((service, index) => (
           <div key={index} className="border border-pink-200 rounded-lg p-4 shadow-md">
             <Image
-              src={service.image || "/placeholder.svg"}
+              src={service.image}
               alt={service.name}
               width={300}
               height={200}
