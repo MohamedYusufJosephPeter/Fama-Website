@@ -13,7 +13,7 @@ export default function Home() {
         <div>
           <h2 className="text-2xl font-semibold text-pink-700 mb-4">Featured Work</h2>
           <Image
-            src="/Banner.png?height=300&width=400"
+            src="/placeholder.svg?height=300&width=400"
             alt="Featured Mehandi Design"
             width={400}
             height={300}
