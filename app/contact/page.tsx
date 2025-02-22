@@ -1,10 +1,38 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Instagram, Linkedin, Mail, Phone, Youtube } from "lucide-react"
+import { useFormStatus } from "react-dom"
+import { useRef } from "react"
+import { toast } from "sonner"
 import { sendEmail } from "../actions/sendEmail"
 
+function SubmitButton() {
+  const { pending } = useFormStatus()
+
+  return (
+    <Button type="submit" className="w-full bg-pink-600 hover:bg-pink-700" disabled={pending}>
+      {pending ? "Sending..." : "Send Message"}
+    </Button>
+  )
+}
+
 export default function Contact() {
+  const formRef = useRef<HTMLFormElement>(null)
+
+  async function handleSubmit(formData: FormData) {
+    const result = await sendEmail(formData)
+
+    if (result.success) {
+      toast.success("Message sent successfully!")
+      formRef.current?.reset()
+    } else {
+      toast.error("Failed to send message. Please try again.")
+    }
+  }
+
   return (
     <div className="max-w-4xl mx-auto">
       <h1 className="text-3xl font-bold text-pink-800 mb-8 text-center">Contact Us</h1>
@@ -54,7 +82,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <form action={sendEmail} className="space-y-4">
+        <form ref={formRef} action={handleSubmit} className="space-y-4">
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
               Name
@@ -79,9 +107,7 @@ export default function Contact() {
             </label>
             <Textarea id="message" name="message" rows={4} required />
           </div>
-          <Button type="submit" className="w-full bg-pink-600 hover:bg-pink-700">
-            Send Message
-          </Button>
+          <SubmitButton />
         </form>
       </div>
     </div>

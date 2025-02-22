@@ -6,7 +6,7 @@ export default function About() {
       <h1 className="text-3xl font-bold text-pink-800 mb-8 text-center">About Me</h1>
       <div className="flex flex-col md:flex-row items-center gap-8">
         <Image
-          src="/About.jfif?height=300&width=300"
+          src="/placeholder.svg?height=300&width=300"
           alt="Mehandi Artist"
           width={300}
           height={300}
