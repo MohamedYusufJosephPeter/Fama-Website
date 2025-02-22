@@ -9,7 +9,7 @@ import { Toaster } from "sonner"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Fama Creation - Mehandi Artist & Beautician",
+  title: "Fama Makeover & Mehandi Studio",
   description: "Professional mehandi artist specializing in bridal mehandi, makeup, and online classes",
     generator: 'v0.dev'
 }
@@ -25,7 +25,7 @@ export default function RootLayout({
       <header className="fixed top-0 left-0 right-0 bg-pink-100 p-4 z-50">
           <nav className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
             <Link href="/" className="text-2xl font-bold text-pink-800">
-              Fama Creation
+            Fama Beautician
             </Link>
             <ul className="flex flex-wrap justify-center space-x-4">
               <li>
@@ -110,7 +110,7 @@ export default function RootLayout({
                     <Linkedin className="w-5 h-5" />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.facebook.com/kathija6?mibextid=ZbWKwL"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-gray-600 hover:text-pink-600 transition-colors"

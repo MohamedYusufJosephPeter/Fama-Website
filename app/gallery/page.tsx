@@ -5,38 +5,44 @@ const categories = [
   {
     title: "Bridal Mehandi",
     slug: "bridal-mehandi",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Gallery/Bridal Mehandi.jpg?height=400&width=600",
     count: "50+ Designs",
   },
   {
     title: "Bridal Makeup",
     slug: "bridal-makeup",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Gallery/Bridal Makeup.jpg?height=400&width=600",
     count: "30+ Looks",
   },
   {
     title: "Mehandi Products",
     slug: "mehandi-products",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Gallery/Mehandi Product Creation.jpg?height=400&width=600",
     count: "20+ Products",
   },
   {
     title: "Online Mehandi Classes",
     slug: "online-classes",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Gallery/Online Mehandi Classes.PNG?hei ght=400&width=600",
     count: "10+ Courses",
   },
   {
     title: "Saree Draping",
     slug: "saree-draping",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Gallery/Saree Draping.jpg?height=400&width=600",
     count: "15+ Styles",
   },
   {
     title: "Other Products",
     slug: "other-products",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Gallery/Other Products.jpg?height=400&width=600",
     count: "25+ Items",
+  },
+  {
+    title: "Customer Reviews",
+    slug: "customer-reviews",
+    image: "/Gallery/Customer Reviews.jpg?height=400&width=600",
+    count: "100+ Reviews",
   },
 ]
 

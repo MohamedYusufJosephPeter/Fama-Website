@@ -33,6 +33,11 @@ const categories = {
     description: "Explore our range of beauty and mehandi accessories",
     images: Array(10).fill("/placeholder.svg?height=400&width=300"),
   },
+  "customer-reviews": {
+    title: "Customer Reviews",
+    description: "Read what our customers have to say about our services",
+    images: Array(4).fill("/placeholder.svg?height=400&width=300"),
+  },
 }
 
 export default function CategoryPage({ params }: { params: { category: string } }) {

@@ -79,6 +79,16 @@ export default function Contact() {
               <Linkedin className="w-5 h-5" />
               <span>Fama Mehandi Artist</span>
             </a>
+            <a
+              href="https://www.linkedin.com/in/fama-mehandi-artist-b07445326/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 text-gray-600 hover:text-pink-600"
+            >
+              <Linkedin className="w-5 h-5" />
+              <span>Fama Mehandi Artist</span>
+            </a>
+            
           </div>
         </div>
 

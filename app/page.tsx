@@ -5,7 +5,8 @@ export default function Home() {
   return (
     <div className="space-y-8">
       <section className="text-center">
-        <h1 className="text-4xl font-bold text-pink-800 mb-4">Welcome to Mehandi Artist & Beautician</h1>
+        <h1 className="text-4xl font-bold text-pink-800 mb-4">Welcome to Fama Makeover & Mehandi Studio
+        </h1>
         <p className="text-xl text-gray-600">Certified beautician specializing in bridal mehandi, makeup, and more</p>
       </section>
 
@@ -13,7 +14,7 @@ export default function Home() {
         <div>
           <h2 className="text-2xl font-semibold text-pink-700 mb-4">Featured Work</h2>
           <Image
-            src="/placeholder.svg?height=300&width=400"
+            src="/Featured Work/Featured Work.jpg?height=300&width=400"
             alt="Featured Mehandi Design"
             width={400}
             height={300}

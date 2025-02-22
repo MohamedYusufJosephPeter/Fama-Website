@@ -4,27 +4,27 @@ const services = [
   {
     name: "Bridal Mehandi",
     description: "Intricate and beautiful mehandi designs for your special day",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/Services/Bridal Mehandi.jpg?height=200&width=300",
   },
   {
     name: "Bridal Makeup",
     description: "Professional makeup services to enhance your natural beauty",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/Services/Bridal Makeup.jpg?height=200&width=300",
   },
   {
-    name: "Saree Draping",
+    name: "Pre-Pleating & Saree Draping",
     description: "Expert saree draping for a perfect and comfortable fit",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/Services/Saree Draping.jpg?height=200&width=300",
   },
   {
     name: "Mehandi Product Creation",
     description: "Custom-made mehandi products for all your needs",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/Services/Mehandi Product Creation.jpg?height=200&width=300",
   },
   {
     name: "Online Mehandi Classes",
     description: "Learn the art of mehandi from the comfort of your home",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/Services/Online Mehandi Classes.PNG?height=200&width=300",
   },
 ]
 
