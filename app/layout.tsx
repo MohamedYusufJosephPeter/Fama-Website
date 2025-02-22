@@ -5,6 +5,8 @@ import { Inter } from "next/font/google"
 import Link from "next/link"
 import { Instagram, Linkedin, Mail, Phone, Youtube, Facebook } from "lucide-react"
 import { Toaster } from "sonner"
+import Image from "next/image"
+
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -25,7 +27,14 @@ export default function RootLayout({
       <header className="fixed top-0 left-0 right-0 bg-pink-100 p-4 z-50">
           <nav className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center">
-              <img src="/Logo/Logo.jpg" alt="Logo" className="w-11 h-11 mr-2 rounded-full" />
+              {/* <img src="/Logo/Logo.jpg" alt="Logo" className="w-11 h-11 mr-2 rounded-full" /> */}
+              <Image
+          src="/Logo/Logo.jpg?height=11&width=11"
+          alt="Mehandi Artist"
+          width={40}
+          height={40}
+          className="rounded-full"
+        />
               <Link href="/" className="text-4xl font-extrabold text-pink-800" style={{ fontFamily: 'cursive' }}>
                 Fama Beautician
               </Link>
