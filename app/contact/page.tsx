@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Instagram, Linkedin, Mail, Phone, Youtube } from "lucide-react"
+import { Instagram, Linkedin, Mail, Phone, Youtube , Facebook} from "lucide-react"
 import { useFormStatus } from "react-dom"
 import { useRef } from "react"
 import { toast } from "sonner"
@@ -79,6 +79,16 @@ export default function Contact() {
               <Linkedin className="w-5 h-5" />
               <span>Fama Mehandi Artist</span>
             </a>
+            <a
+                    href="https://www.facebook.com/kathija6?mibextid=ZbWKwL"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-gray-600 hover:text-pink-600 transition-colors"
+                  >
+                    <Facebook className="w-5 h-5" />
+                    <span>Fama Mehandi Artist</span>
+                  </a>
+            
           </div>
         </div>
 
@@ -93,13 +103,13 @@ export default function Contact() {
             <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
               Email
             </label>
-            <Input type="email" id="email" name="email" required />
+            <Input type="email" id="email" name="email"  />
           </div>
           <div>
             <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
               Phone
             </label>
-            <Input type="tel" id="phone" name="phone" />
+            <Input type="tel" id="phone" name="phone" required />
           </div>
           <div>
             <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">

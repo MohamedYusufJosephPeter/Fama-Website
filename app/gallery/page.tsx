@@ -5,38 +5,44 @@ const categories = [
   {
     title: "Bridal Mehandi",
     slug: "bridal-mehandi",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Gallery/Bridal Mehandi.jpg?height=400&width=600",
     count: "50+ Designs",
   },
   {
     title: "Bridal Makeup",
     slug: "bridal-makeup",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Gallery/Bridal Makeup.jpg?height=400&width=600",
     count: "30+ Looks",
   },
   {
     title: "Mehandi Products",
     slug: "mehandi-products",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Gallery/Mehandi Product Creation.jpg?height=400&width=600",
     count: "20+ Products",
   },
   {
     title: "Online Mehandi Classes",
     slug: "online-classes",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Gallery/Online Mehandi Classes.PNG?height=400&width=600",
     count: "10+ Courses",
   },
   {
     title: "Saree Draping",
     slug: "saree-draping",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Gallery/Saree Draping.jpg?height=400&width=600",
     count: "15+ Styles",
   },
   {
     title: "Other Products",
     slug: "other-products",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Gallery/Other Products.jpg?height=400&width=600",
     count: "25+ Items",
+  },
+  {
+    title: "Customer Reviews",
+    slug: "customer-reviews",
+    image: "/Gallery/Customer Reviews.jpg?height=400&width=600",
+    count: "100+ Reviews",
   },
 ]
 
@@ -44,7 +50,7 @@ export default function GalleryPage() {
   return (
     <div className="space-y-12">
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">Our Gallery</h1>
+        <h1 className="text-4xl font-bold text-pink-800 mb-4">Our Gallery</h1>
         <p className="text-gray-600 max-w-2xl mx-auto">
           Explore our extensive collection of bridal mehandi designs, makeup transformations, and professional services.
         </p>
@@ -78,14 +84,26 @@ export default function GalleryPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
-          {[1, 2, 3].map((i) => (
+          {[{
+            name: 'Happy Client 1',
+            review: 'Amazing service! The mehandi design was exactly what I wanted for my wedding day. Highly recommend!',
+            image: '/Logo/logo.jpg'
+          }, {
+            name: 'Satisfied Client 2',
+            review: 'The bridal makeup was stunning and lasted all day. Thank you for making my day special!',
+            image: '/Logo/logo.jpg'
+          }, {
+            name: 'Delighted Client 3',
+            review: 'Professional and friendly service. The saree draping was perfect!',
+            image: '/Logo/logo.jpg'
+          }].map((client, i) => (
             <div key={i} className="bg-white p-6 rounded-xl shadow-sm">
               <div className="flex items-center gap-4 mb-4">
                 <div className="relative w-12 h-12 rounded-full overflow-hidden">
-                  <Image src="/placeholder.svg?height=48&width=48" alt="Customer" fill className="object-cover" />
+                  <Image src={client.image} alt={client.name} fill className="object-cover" />
                 </div>
                 <div>
-                  <h4 className="font-semibold">Happy Client {i}</h4>
+                  <h4 className="font-semibold">{client.name}</h4>
                   <div className="flex text-yellow-400">
                     {[...Array(5)].map((_, j) => (
                       <span key={j}>★</span>
@@ -94,14 +112,14 @@ export default function GalleryPage() {
                 </div>
               </div>
               <p className="text-gray-600">
-                "Amazing service! The mehandi design was exactly what I wanted for my wedding day. Highly recommend!"
+                "{client.review}"
               </p>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="py-12">
+      {/* <section className="py-12">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Latest Videos</h2>
           <p className="text-gray-600">Watch our latest tutorials and announcements</p>
@@ -124,8 +142,24 @@ export default function GalleryPage() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
+      <section className="py-12">
+  <div className="text-center mb-8">
+    <h2 className="text-3xl font-bold text-gray-900 mb-4">Latest Videos</h2>
+    <p className="text-gray-600">Watch our latest tutorials and announcements</p>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {['video3.mp4'].map((video, i) => (
+      <div key={i} className="relative aspect-video rounded-lg overflow-hidden bg-gray-100">
+        <video controls className="object-cover w-full h-full">
+          <source src={`/Videos/${video}`} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    ))}
+  </div>
+</section>
     </div>
   )
 }
-
